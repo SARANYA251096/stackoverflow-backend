@@ -9,8 +9,9 @@ router.get("/", (req, res) => {
   res.send("Welcome to stack overflow clone");
 });
 
-router.use("/question", questionRouter);
-router.use("/answer", answerRouter);
-router.use("/comment", commentRouter);
+
+router.use("/api/question", questionRouter);
+router.use("/api/answer", answerRouter);
+router.use("/api/comment", commentRouter);
 
 module.exports = router;
